@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>ONG - Instituto Patas do Amanhã</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 class="nome-ong">
+                    <strong>ONG</strong> — Instituto Patas do Amanhã
+                </h1>
+
+                <img
+                    class="pata-img"
+                    src="assets/img/patas.png"
+                    alt="Imagem de uma pata de cachorro"
+                    width="100"
+                >
+
+                <p class="slogan">
+                    Um lar pode mudar uma vida.
+                </p>
+
+                <nav class="nav-links">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        class="menu-toggle-checkbox"
+                    >
+
+                    <label
+                        for="menu-toggle"
+                        class="menu-toggle"
+                        aria-label="Abrir menu"
+                    >
+                        ☰
+                    </label>
+
+                    <div class="menu-items">
+                        <a href="#inicio">
+                            Página Inicial
+                        </a>
+
+                        <div class="dropdown">
+                            <a
+                                href="#projetos"
+                                class="dropdown-toggle"
+                            >
+                                Nossos Projetos
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="#lar-temporario">
+                                    Lar Temporário
+                                </a>
+
+                                <a href="#patas-vacinadas">
+                                    Patas Vacinadas
+                                </a>
+
+                                <a href="#feira-adocao">
+                                    Feira de Adoção
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#cadastro">
+                            Cadastro
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="app"></div>
+        </main>
+
+        <footer>
+            <h2>Contato</h2>
+
+            <p>
+                Email:
+                <a href="mailto:contato@patasdoamanha.org">
+                    contato@patasdoamanha.org
+                </a>
+            </p>
+
+            <p>Telefone: (11) 1234-5678</p>
+
+            <p>
+                Endereço: Rua dos Animais, 123 - Bairro Felino.
+            </p>
+
+            <p>
+                © 2026 Instituto Patas do Amanhã.
+                Todos os direitos reservados.
+            </p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module"src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Nossos Projetos - Instituto Patas do Amanhã</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <div id="app">
+            <header>
+                <p class="nome-ong">
+                    <strong>ONG</strong> — Instituto Patas do Amanhã
+                </p>
+
+                <img
+                    class="pata-img"
+                    src="assets/img/patas.png"
+                    alt="Imagem de uma pata de cachorro"
+                    width="100"
+                >
+
+                <h1>Nossos Projetos</h1>
+
+                <nav class="nav-links">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        class="menu-toggle-checkbox"
+                    >
+
+                    <label
+                        for="menu-toggle"
+                        class="menu-toggle"
+                        aria-label="Abrir menu"
+                    >
+                        ☰
+                    </label>
+
+                    <div class="menu-items">
+                        <a href="#inicio">Página Inicial</a>
+
+                        <div class="dropdown">
+                            <a href="#projetos" class="dropdown-toggle">
+                                Nossos Projetos
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="projetos.html#lar-temporario">
+                                    Lar Temporário
+                                </a>
+
+                                <a href="projetos.html#patas-vacinadas">
+                                    Patas Vacinadas
+                                </a>
+
+                                <a href="projetos.html#feira-adocao">
+                                    Feira de Adoção
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#cadastro">Cadastro</a>
+                    </div>
+                </nav>
+            </header>
+            </div>
+
+            <div class="alert alert-info" role="status">
+                Os projetos apresentados possuem diferentes formas de participação,
+                como adoção, voluntariado, vacinação e apoio às campanhas.
+            </div>
+
+            <article id="lar-temporario" class="lar-temporario">
+                <span class="badge">Acolhimento</span>
+
+                <h2>Projeto Lar Temporário</h2>
+
+                <p>
+                    Conecta animais resgatados a voluntários que podem oferecer
+                    abrigo temporário enquanto uma família definitiva não é encontrada.
+                </p>
+            </article>
+
+            <article id="patas-vacinadas" class="patas-vacinadas">
+                <span class="badge">Saúde</span>
+
+                <h2>Campanha Patas Vacinadas</h2>
+
+                <p>
+                    Busca ampliar a vacinação de animais de famílias que não possuem
+                    condições financeiras para arcar com os custos.
+                </p>
+            </article>
+
+            <article id="feira-adocao" class="feira-adocao">
+                <span class="badge">Adoção</span>
+
+                <h2>Feira de Adoção</h2>
+
+                <p>
+                    Eventos realizados periodicamente para aproximar os animais
+                    disponíveis de possíveis adotantes.
+                </p>
+            </article>
+
+            <section class="participacao">
+                <h2>Participação</h2>
+
+                <p>
+                    Existem diversas maneiras de ajudar o Instituto Patas do Amanhã:
+                </p>
+
+                <ul>
+                    <li>Adotar um animal</li>
+                    <li>Ser voluntário</li>
+                    <li>Oferecer um lar temporário</li>
+                    <li>Fazer uma doação</li>
+                    <li>Divulgar animais disponíveis para adoção</li>
+                    <li>Participar das campanhas</li>
+                </ul>
+            </section>
+
+            <section class="chamada-participacao">
+                <h2>Participe!</h2>
+
+                <p>
+                    Faça parte dessa mudança e ajude a transformar uma história
+                    de abandono em uma história de recomeço.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="window.location.href='cadastro.html'"
+                >
+                    Clique aqui para se cadastrar e participar
+                </button>
+
+                <h3><strong>OU</strong></h3>
+
+                <button
+                    type="button"
+                    onclick="window.location.href='index.html'"
+                >
+                    Clique aqui para voltar à página inicial
+                </button>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Instituto Patas do Amanhã. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

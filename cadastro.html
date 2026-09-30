@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cadastro - Instituto Patas do Amanhã</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <div>
+            <header class="cadastro-header">
+                <p class="nome-ong">
+                    <strong>ONG</strong> — Instituto Patas do Amanhã
+                </p>
+
+                <img
+                    class="pata-img"
+                    src="assets/img/patas.png"
+                    alt="Imagem de uma pata de cachorro"
+                    width="100"
+                >
+
+                <h1>Cadastro de Adotantes e Voluntários</h1>
+
+                <nav class="nav-links">
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        class="menu-toggle-checkbox"
+                    >
+
+                    <label
+                        for="menu-toggle"
+                        class="menu-toggle"
+                        aria-label="Abrir menu"
+                    >
+                        ☰
+                    </label>
+
+                    <div class="menu-items">
+                        <a href="#inicio">Página Inicial</a>
+
+                        <div class="dropdown">
+                            <a href="#projetos" class="dropdown-toggle">
+                                Nossos Projetos
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="projetos.html#lar-temporario">
+                                    Lar Temporário
+                                </a>
+
+                                <a href="projetos.html#patas-vacinadas">
+                                    Patas Vacinadas
+                                </a>
+
+                                <a href="projetos.html#feira-adocao">
+                                    Feira de Adoção
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="#cadastro">Cadastro</a>
+                    </div>
+                </nav>
+
+                <h2>Formulário de Cadastro</h2>
+
+                <p class="instrucao-form">
+                    Preencha o formulário abaixo para realizar o cadastro.
+                </p>
+            </header>
+            </div>
+
+            <section class="cadastro-form">
+                <div class="alert alert-info" role="status">
+                    Confira os formatos indicados nos campos de CEP, telefone e CPF
+                    antes de enviar o formulário.
+                </div>
+
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <legend><strong>Seus Dados</strong></legend>
+
+                        <label class="input-form" for="nome">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            title="Digite seu nome completo"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+
+                        <label class="input-form" for="CEP">CEP:</label>
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            id="CEP"
+                            name="CEP"
+                            maxlength="9"
+                            pattern="\d{5}-\d{3}"
+                            placeholder="00000-000"
+                            title="Digite o CEP no formato 00000-000"
+                            required
+                        >
+
+                        <label class="input-form" for="Data-de-Nascimento">
+                            Data de Nascimento:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="Data-de-Nascimento"
+                            name="Data-de-Nascimento"
+                            min="1900-01-01"
+                            max="2026-12-31"
+                            required
+                        >
+
+                        <label class="input-form" for="Telefone">
+                            Telefone:
+                        </label>
+
+                        <input
+                            type="tel"
+                            inputmode="numeric"
+                            id="Telefone"
+                            name="Telefone"
+                            maxlength="15"
+                            pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                            placeholder="(00) 00000-0000"
+                            title="Digite o telefone no formato (00) 00000-0000"
+                            required
+                        >
+
+                        <label class="input-form" for="CPF">
+                            CPF:
+                        </label>
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            id="CPF"
+                            name="CPF"
+                            maxlength="14"
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            placeholder="000.000.000-00"
+                            title="Digite o CPF no formato 000.000.000-00"
+                            required
+                        >
+
+                        <div class="form-buttons">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="modal-area">
+                    <input
+                        type="checkbox"
+                        id="modal-toggle"
+                        class="modal-toggle"
+                    >
+
+                    <label
+                        for="modal-toggle"
+                        class="modal-open"
+                    >
+                        Ver orientação antes de enviar
+                    </label>
+
+                    <div
+                        class="modal"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-title"
+                    >
+                        <div class="modal-content">
+                            <h2 id="modal-title">Orientação de cadastro</h2>
+
+                            <p>
+                                Confira se todos os campos obrigatórios foram
+                                preenchidos corretamente antes de enviar o formulário.
+                            </p>
+
+                            <label
+                                for="modal-toggle"
+                                class="modal-close"
+                            >
+                                Fechar
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Instituto Patas do Amanhã. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
