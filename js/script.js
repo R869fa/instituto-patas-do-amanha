@@ -49,8 +49,13 @@ app.addEventListener("submit", event => {
     });
 
     if (formularioValido) {
-        alert("Cadastro validado com sucesso!");
-    }
+    Swal.fire({
+        icon: "success",
+        title: "Cadastro validado",
+        text: "Todos os dados foram preenchidos corretamente.",
+        confirmButtonColor: "#2E7D32"
+    });
+}
 });
 
 /* Limpeza dos dados */
