@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import { render } from "./router.js";
 import {
     camposFormulario,
@@ -49,7 +51,12 @@ app.addEventListener("submit", event => {
     });
 
     if (formularioValido) {
-        alert("Cadastro validado com sucesso!");
+    Swal.fire({
+        icon: "success",
+        title: "Cadastro validado",
+        text: "Todos os dados foram preenchidos corretamente.",
+        confirmButtonColor: "#2E7D32"
+    });
     }
 });
 
