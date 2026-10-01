@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import { render } from "./router.js";
 import {
     camposFormulario,
@@ -55,7 +57,7 @@ app.addEventListener("submit", event => {
         text: "Todos os dados foram preenchidos corretamente.",
         confirmButtonColor: "#2E7D32"
     });
-}
+    }
 });
 
 /* Limpeza dos dados */
