@@ -15,5 +15,8 @@
   "type": "commonjs",
   "devDependencies": {
     "vite": "^8.3.1"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.26.25"
   }
 }
