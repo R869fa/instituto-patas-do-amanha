@@ -1,0 +1,19 @@
+{
+  "name": "aula-1",
+  "version": "1.0.0",
+  "description": "Projeto front-end desenvolvido para o Instituto Patas do Amanhã, uma organização\r voltada à proteção, recuperação e adoção responsável de animais.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Testes realizados manualmente no navegador",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}
